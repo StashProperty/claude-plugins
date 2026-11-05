@@ -216,8 +216,8 @@ campaign's data. Prices that drive charts are numbers in $m. Then run:
 
 The script draws the DOM bars, the dumbbell and the ranked dot chart
 natively, in the brand colours. Don't write new layout code. Render with
-`pdftoppm` and check every page against
-`report-export/examples/reference/Campaign_Review_example_Dwellicious.pdf`.
+`pdftoppm` and check every page against a build of
+`report-export/examples/campaign_review_example.json`.
 
 ### Word (.docx)
 

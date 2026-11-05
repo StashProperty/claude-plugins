@@ -126,8 +126,8 @@ write new layout code. The scripts are in this skill's `scripts/` folder:
 4. Render with `pdftoppm -r 50` and look at every page. Long text shrinks
    to fit one line, but check for wrapping in the body text and shorten
    the wording if needed.
-5. Compare against `examples/reference/`: the reference PDFs, plus
-   `canva_appraisal_p1-6.png` for the Canva look.
+5. Compare against the layout you get by building the matching file in
+   `examples/` (e.g. `appraisal_example.json`) with the same script.
 
 For any other report (buyer CMA, feaso, case studies, and so on), use
 ReportLab with these rules:
