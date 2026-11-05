@@ -57,6 +57,15 @@ The PDF reports need Python 3 with `reportlab` and `pillow`. Claude installs the
 
 To get the latest version, run `/plugin marketplace update stash`. Maintainers: bump `version` in `plugins/stash-property/.claude-plugin/plugin.json` with every change, then tag the release as `vX.Y.Z`.
 
+## Other services the skills use
+
+Apart from the Stash connector, the skills only use what you already have in Claude:
+
+- **Canva:** when you ask for a Canva version, Claude uses your own Canva connector.
+- **Web search and fetch:** Claude uses these to read your agency website for branding (only when you paste the URL) and to check public council planning pages, e.g. Brisbane City Plan and Planning Victoria.
+
+The plugin sends no data to any other service.
+
 ## Privacy
 
 See the [Stash privacy policy](https://www.stashproperty.com.au/privacy/) (section 14 covers the Stash MCP and AI assistant integrations).
