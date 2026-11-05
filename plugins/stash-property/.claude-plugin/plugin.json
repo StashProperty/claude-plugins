@@ -19,5 +19,8 @@
   ],
   "icon": "./.claude-plugin/icon.png",
   "privacyPolicyUrl": "https://www.stashproperty.com.au/privacy/",
-  "license": "MIT"
+  "license": "MIT",
+  "supportUrl": "https://help.stashproperty.com.au/",
+  "documentationUrl": "https://github.com/StashProperty/claude-plugins#readme",
+  "termsOfServiceUrl": "https://www.stashproperty.com.au/app/terms.html"
 }
