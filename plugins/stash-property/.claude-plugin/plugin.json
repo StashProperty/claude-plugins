@@ -1,0 +1,23 @@
+{
+  "name": "stash-property",
+  "version": "0.2.0",
+  "description": "Australian property skills on live Stash data: quickval and CMA, seller appraisal, pre-appraisal briefing, campaign review, commercial CMA, feaso, planning rules, on-market deals, suburb finder and reno case studies, exported as PDF, Word or Canva in your brand.",
+  "author": {
+    "name": "Stash Property",
+    "url": "https://www.stashproperty.com.au"
+  },
+  "homepage": "https://github.com/StashProperty/claude-plugins",
+  "repository": "https://github.com/StashProperty/claude-plugins",
+  "keywords": [
+    "property",
+    "real-estate",
+    "australia",
+    "cma",
+    "appraisal",
+    "valuation",
+    "stash"
+  ],
+  "icon": "./.claude-plugin/icon.png",
+  "privacyPolicyUrl": "https://www.stashproperty.com.au/privacy/",
+  "license": "MIT"
+}

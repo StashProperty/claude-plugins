@@ -1,0 +1,358 @@
+{
+ "report_date": "30 October 2026",
+ "month_year": "October 2026",
+ "prepared_by": "Stash Property",
+ "subject": {
+  "address": "9 Wattlebird Crescent, Camp Hill",
+  "specs": "4 bed · 2 bath · 2 car · 607sqm · renovated 1935 Queenslander",
+  "hero": "images/hero.jpg"
+ },
+ "cover_stats": [
+  {
+   "label": "Camp Hill house median",
+   "value": "$2.00m"
+  },
+  {
+   "label": "Camp Hill houses · 10-year growth",
+   "value": "+158%"
+  }
+ ],
+ "home": {
+  "stats": [
+   {
+    "label": "Land",
+    "value": "607sqm",
+    "sub": "Classic Camp Hill block"
+   },
+   {
+    "label": "Floor area",
+    "value": "220sqm",
+    "sub": "Two levels, 4 bed, 2 bath"
+   },
+   {
+    "label": "Built",
+    "value": "1935",
+    "sub": "Renovated character, 2 car"
+   },
+   {
+    "label": "Rental estimate",
+    "value": "$1,090/wk",
+    "sub": "Camp Hill 4-bed median"
+   }
+  ],
+  "buyers_see": [
+   "A renovated 1930s Queenslander on a full 607sqm block: the home most Camp Hill buyers are looking for.",
+   "Four bedrooms on two levels, with room to add a third bathroom.",
+   "No pool, so the yard stays open and the price stays under the pool premium.",
+   "Character streetscape protected by Brisbane's pre-1947 character rules.",
+   "Close to Martha Street cafes and the Camp Hill shopping village.",
+   "Sample report: planning and flood are checked against the real address in a live report."
+  ],
+  "history_heading": "Camp Hill house prices",
+  "history": [
+   {
+    "value": "+158%",
+    "label": "10 years"
+   },
+   {
+    "value": "+82%",
+    "label": "5 years"
+   },
+   {
+    "value": "+14.3%",
+    "label": "12 months"
+   }
+  ],
+  "source": "Source: Stash Property, Camp Hill houses, 30 Oct 2026. The address is fictional; the cover image is AI-generated."
+ },
+ "market": {
+  "competition_label": "Your competition · 4-bed homes for sale nearby",
+  "competition": [
+   {
+    "listing": "56 Kennington Rd",
+    "home": "4/2 · 607sqm",
+    "asking": "Offers over $1.85m",
+    "days": "99",
+    "status": "Listed 22 Jul, still for sale"
+   },
+   {
+    "listing": "21 Halland Tce",
+    "home": "4/2 · 810sqm",
+    "asking": "Auction",
+    "days": "126",
+    "status": "Listed 25 Jun, still for sale"
+   },
+   {
+    "listing": "38 Koondara St",
+    "home": "4/2 · 405sqm",
+    "asking": "By negotiation",
+    "days": "73",
+    "status": "Listed 17 Aug"
+   },
+   {
+    "listing": "95 Samuel St",
+    "home": "4/2 · 579sqm",
+    "asking": "By negotiation",
+    "days": "65",
+    "status": "Listed 25 Aug"
+   },
+   {
+    "listing": "22 Sydney Ave",
+    "home": "4/3 · 405sqm",
+    "asking": "Offers from $1.90m",
+    "days": "39",
+    "status": "Listed 20 Sep"
+   },
+   {
+    "listing": "24 Orwell St",
+    "home": "4/3 · 433sqm",
+    "asking": "From $1.665m",
+    "days": "36",
+    "status": "Listed 23 Sep"
+   }
+  ],
+  "competition_takeaway": "All six have been listed longer than the 26-day suburb median. The closest match, 56 Kennington Rd (607sqm), has been asking $1.85m for 99 days.",
+  "suburb_label": "Camp Hill house market · Stash Property",
+  "suburb_rows": [
+   [
+    "Median price",
+    "$2.00m",
+    "12 months to Sep ’26; 4-bed median $2.15m"
+   ],
+   [
+    "5-year growth",
+    "+82%",
+    "5-yr CAGR 12.7%"
+   ],
+   [
+    "12-month growth",
+    "+14.3%",
+    "4-bed +22.2% · 3-bed +9.2% · 5-bed +23.1%"
+   ],
+   [
+    "Days on market",
+    "26 days",
+    "4-bed 26 days; 5-bed 40 days"
+   ],
+   [
+    "Houses for sale",
+    "70",
+    "19 new listings in September"
+   ],
+   [
+    "Sales, 12 months",
+    "186",
+    "Range $0.96m to $5.95m"
+   ],
+   [
+    "Auction clearance",
+    "42%",
+    "Camp Hill houses, 12 months"
+   ],
+   [
+    "Stock · vacancy",
+    "1.2% · 1.2%",
+    "4-bed rent median $1,090/wk"
+   ],
+   [
+    "Long-run growth",
+    "+158% in 10 yrs",
+    "10-yr CAGR 9.9% · 3-yr CAGR 14.3%"
+   ]
+  ],
+  "supports_heading": "What supports value in Camp Hill",
+  "supports": [
+   "Population of 12,254, up 13.1% in 10 years",
+   "Median household income $3,085/wk",
+   "74% of houses owner-occupied",
+   "Socio-economic advantage (IRSAD) in Australia's top 1% of suburbs",
+   "Education and occupation (IEO) in Australia's top 3%",
+   "1,767 residents work from home"
+  ],
+  "footnote": "Address fictional. Sales and market data from Stash Property, 30 Oct 2026."
+ },
+ "sales": {
+  "intro": "The most relevant 4-bed house sales nearby this year. On the next page each one is adjusted to match your home, and we show how much each has gained in value.",
+  "label": "Comparable sales · Camp Hill · 2026",
+  "cards": [
+   {
+    "image": "images/fryar.png",
+    "name": "21 Fryar St · 1.3km away",
+    "spec": "4 bed · 2 bath · 607sqm · 1940 · pool",
+    "status": "Sold $1.85m · Jun ’26 · 74 days on market"
+   },
+   {
+    "image": "images/bundah.png",
+    "name": "38 Bundah St · 70m away",
+    "spec": "4 bed · 2 bath · 752sqm · 1930 · renovated",
+    "status": "Sold $2.83m · Jul ’26 · 68 days on market"
+   },
+   {
+    "image": "images/raven.png",
+    "name": "67 Raven St · 250m away",
+    "spec": "4 bed · 3 bath · 405sqm",
+    "status": "Sold $1.98m · Jun ’26 · 47 days on market"
+   },
+   {
+    "image": "images/koondara.png",
+    "name": "17 Koondara St · 350m away",
+    "spec": "4 bed · 2 bath · 756sqm · 1960",
+    "status": "Sold $2.00m · Apr ’26 · 64 days on market"
+   }
+  ],
+  "on_market_label": "Your closest competition · 4-bed homes for sale now",
+  "on_market": [
+   {
+    "image": "images/kennington.png",
+    "value": "$1.85m+",
+    "caption": "56 Kennington Rd · 99 days"
+   },
+   {
+    "image": "images/sydney.png",
+    "value": "$1.90m+",
+    "caption": "22 Sydney Ave · 39 days"
+   },
+   {
+    "image": "images/samuel.png",
+    "value": "Negotiation",
+    "caption": "95 Samuel St · 65 days"
+   }
+  ],
+  "caption": "Listing photos from Stash Property. Prices and days on market as at 30 Oct 2026."
+ },
+ "compare": {
+  "intro": "Each sale is adjusted to your home: land $800/sqm · bathroom $40k · car space $20k · pool $65k. Floor area isn't recorded for most of these sales, so it isn't adjusted. Your home: 607sqm, 2 bath, 2 car, no pool.",
+  "rows": [
+   [
+    "21 Fryar St",
+    "$1.85m",
+    "–",
+    "–",
+    "–",
+    "-$65k",
+    "n/a",
+    "$1.79m",
+    "HIGH"
+   ],
+   [
+    "62 Ara St",
+    "$1.71m",
+    "–",
+    "–",
+    "–",
+    "–",
+    "n/a",
+    "$1.71m",
+    "HIGH"
+   ],
+   [
+    "17 Koondara St",
+    "$2.00m",
+    "-$119k",
+    "–",
+    "–",
+    "–",
+    "n/a",
+    "$1.88m",
+    "MED"
+   ],
+   [
+    "67 Raven St",
+    "$1.98m",
+    "+$162k",
+    "-$40k",
+    "–",
+    "–",
+    "n/a",
+    "$2.10m",
+    "MED"
+   ],
+   [
+    "38 Bundah St",
+    "$2.83m",
+    "-$116k",
+    "–",
+    "–",
+    "–",
+    "n/a",
+    "$2.71m",
+    "MED"
+   ]
+  ],
+  "footnote": "Adjusted = what each sale would likely have fetched if it were your home. HIGH = same land size and closest in type; MED = useful but less alike. 38 Bundah St is a fully renovated home on a larger block and sits at the top of the range. How these combine into a price is on page 6.",
+  "context": [
+   {
+    "value": "$2.15m",
+    "caption": "Camp Hill 4-bed median, 12 months"
+   },
+   {
+    "value": "9.9% a year",
+    "caption": "Camp Hill house growth, 10-yr average"
+   },
+   {
+    "value": "+22.2%",
+    "caption": "Camp Hill 4-beds, last 12 months"
+   }
+  ],
+  "changes": [
+   {
+    "title": "38 Bundah St · renovated",
+    "body": "$0.60m Apr ’04 to $2.83m Jul ’26. Renovated Queenslander: value added by the works."
+   },
+   {
+    "title": "17 Koondara St · +172%",
+    "body": "$0.74m Sep ’13 to $2.00m Apr ’26. Same 1960 home on 756sqm."
+   },
+   {
+    "title": "67 Raven St · +151%",
+    "body": "$0.79m Jul ’13 to $1.98m Jun ’26. 4 bed, 3 bath on 405sqm."
+   },
+   {
+    "title": "21 Fryar St · +12%",
+    "body": "$1.65m Nov ’21 to $1.85m Jun ’26. Same 1940 home: well below the suburb's +82% over 5 years."
+   }
+  ],
+  "changes_note": "Prior and recent sale prices from Stash Property. Works done between sales are noted only where the listing records them."
+ },
+ "price": {
+  "intro": "We weight the closest sales most and the wider group next. This sample has no Stash automated valuation because the address is fictional; a live report adds it as a check.",
+  "weights": [
+   [
+    "Closest matches: 21 Fryar, 62 Ara (HIGH)",
+    "$1.75m",
+    "70%"
+   ],
+   [
+    "Wider group: 3 sales (MED)",
+    "$2.23m",
+    "30%"
+   ],
+   [
+    "Weighted value",
+    "$1.89m",
+    "100%"
+   ]
+  ],
+  "weights_note": "The range runs from 3% below to 5% above the weighted value, to allow for condition and presentation, which we confirm at inspection.",
+  "range": "$1.84m – $1.99m",
+  "range_sub": "9 Wattlebird Crescent, Camp Hill, in today's market, well presented",
+  "tiles": [
+   {
+    "label": "Weighted value",
+    "value": "$1.89m"
+   },
+   {
+    "label": "Suggested price guide",
+    "value": "Offers over $1.85m",
+    "highlight": true
+   },
+   {
+    "label": "4-bed median",
+    "value": "$2.15m"
+   }
+  ],
+  "why_heading": "Why the guide sits where it does",
+  "why": "Camp Hill buyers are active, with 4-bed prices up 22% in a year, but all six competing homes have been listed longer than the 26-day median. A guide of offers over $1.85m matches the closest competing home and puts yours in front of every buyer searching from $1.8m.\n\nYour reserve and sale method are your call. We'll talk both through with you.",
+  "disclaimer": "Sample report. This appraisal is an opinion of likely selling price based on comparable sales and market data from Stash Property as at 30 October 2026. It is not a formal valuation. The address is fictional; the cover image is AI-generated and the comparable sale photos are Stash listing photos."
+ }
+}

@@ -1,0 +1,386 @@
+{
+ "report_date": "28 October 2026",
+ "prepared_by": "Dwellicious",
+ "suburb_name": "Bulimba",
+ "suburb_dom": 27,
+ "subject": {
+  "address": "27 Riverbend Terrace, Bulimba",
+  "specs": "4 bed · 3 bath · 2 car · pool · 405sqm · built 2014",
+  "hero": "images/hero.jpg",
+  "listed": "8 Oct 2026",
+  "day": 20,
+  "guide": 2.95,
+  "guide_text": "Offers over $2.95m",
+  "method": "Private treaty"
+ },
+ "market_range": {
+  "low": 2.58,
+  "high": 2.79,
+  "mid": 2.66
+ },
+ "activity_label": "Buyer activity so far (sample figures)",
+ "activity": [
+  [
+   "Portal views",
+   "4,812"
+  ],
+  [
+   "Enquiries",
+   "23"
+  ],
+  [
+   "Inspections / groups through",
+   "14 groups"
+  ],
+  [
+   "Second inspections",
+   "3"
+  ],
+  [
+   "Offers received",
+   "1 ($2.62m)"
+  ],
+  [
+   "Buyer price feedback",
+   "$2.55m to $2.70m"
+  ]
+ ],
+ "bracket_note": "Most buyer interest arrives in the first two to three weeks of a campaign. Buyers searching portals filter by price, and a guide above $2.75m hides your home from buyers whose search tops out there. Most buyers for a 4-bed home in this pocket are working in the $2.5m to $2.8m bracket.",
+ "market": {
+  "takeaway": "Bulimba houses are taking longer to sell, and buyers have fresh choice every week.",
+  "kpis": [
+   [
+    "50 days",
+    "Median days on market, recent sales (27 over the year)"
+   ],
+   [
+    "17",
+    "Houses for sale now (4 listed over 60 days)"
+   ],
+   [
+    "+2.3%",
+    "4-bed house growth, 12 months (all houses +8.9%)"
+   ],
+   [
+    "51%",
+    "Bulimba house auction clearance, 12 months"
+   ]
+  ],
+  "rows": [
+   [
+    "Days on market",
+    "50 days (sales since Aug)",
+    "27 days median across 12 months"
+   ],
+   [
+    "Houses for sale",
+    "17 listed now",
+    "9 added in 30 days; 4 listed over 60 days"
+   ],
+   [
+    "Sales",
+    "7 since August",
+    "98 house sales over 12 months"
+   ],
+   [
+    "Price growth",
+    "4-bed +2.3% (12 months)",
+    "All houses +8.9%; 5-bed +13.8%"
+   ],
+   [
+    "House median",
+    "$2.20m",
+    "12 months to Sep 2026"
+   ],
+   [
+    "Auction clearance",
+    "51%",
+    "Bulimba houses, 12 months"
+   ]
+  ],
+  "meaning": "Recent sales have needed a median of 50 days, against 27 days across the past year. There are 17 houses for sale, and 9 came on in the last 30 days, so buyers see fresh choice every week. Four-bedroom houses grew just 2.3% over 12 months, well behind the suburb's +8.9%, which larger homes drove. Pricing to today's market, rather than to last year's, is what gets a home sold.",
+  "source": "Source: Stash Property (stashproperty.com.au), Bulimba house sales and listings, as at 28 Oct 2026."
+ },
+ "competition": {
+  "takeaway": "11 competing 4–5 bed homes are listed within 1.5km. 6 have passed an offers deadline or auction without selling.",
+  "listings": [
+   {
+    "address": "72 Smallman St, Bulimba",
+    "bdba": "5/2",
+    "land": "556",
+    "days": 141,
+    "history": "Top offer closing 29 Jun passed",
+    "guide": "For sale"
+   },
+   {
+    "address": "38 Balowrie St, Hamilton",
+    "bdba": "4/3",
+    "land": "405",
+    "days": 104,
+    "history": "Auction, then $2.60m+, now $2.58m",
+    "guide": "$2.58m"
+   },
+   {
+    "address": "24 Pine St, Bulimba",
+    "bdba": "4/3",
+    "land": "560",
+    "days": 76,
+    "history": "Auction campaign; offers over $2.60m",
+    "guide": "Auction"
+   },
+   {
+    "address": "34 Hipwood Rd, Hamilton",
+    "bdba": "4/2",
+    "land": "433",
+    "days": 68,
+    "history": "By negotiation, now priced",
+    "guide": "From $2.90m"
+   },
+   {
+    "address": "67 Dobson St, Ascot",
+    "bdba": "4/3",
+    "land": "405",
+    "days": 55,
+    "history": "Offers over $2.90m, now $2.60m",
+    "guide": "$2.60m"
+   },
+   {
+    "address": "58 Jamieson St, Bulimba",
+    "bdba": "5/3",
+    "land": "311",
+    "days": 54,
+    "history": "Best offers by 5 Oct passed",
+    "guide": "For sale"
+   },
+   {
+    "address": "13 Shakespeare St, Bulimba",
+    "bdba": "5/4",
+    "land": "587",
+    "days": 52,
+    "history": "Best offers by 30 Sep passed",
+    "guide": "From $2.99m"
+   },
+   {
+    "address": "192 Brisbane St, Bulimba",
+    "bdba": "5/4",
+    "land": "804",
+    "days": 28,
+    "history": "Top offer closing 24 Oct passed",
+    "guide": "For sale"
+   },
+   {
+    "address": "7 Myuna St, Balmoral",
+    "bdba": "4/2",
+    "land": "403",
+    "days": 27,
+    "history": "Best offers by 19 Oct passed",
+    "guide": "Over $2.69m"
+   },
+   {
+    "address": "80 Princess St, Bulimba",
+    "bdba": "5/3",
+    "land": "350",
+    "days": 17,
+    "history": "Best offers by 4 Nov",
+    "guide": "By deadline"
+   }
+  ],
+  "note": "Several Bulimba homes larger than yours (5 bed, up to 804sqm) are on the market at or near your price. With them asking the same money, buyers will choose the bigger home."
+ },
+ "comparing": {
+  "intro": "These 4-bed homes are on the market at the same time as yours. Below them, three nearby homes that sold quickly at the market price.",
+  "cards": [
+   {
+    "image": "images/c1.jpg",
+    "name": "7 Myuna St, Balmoral",
+    "spec": "4 bed · 2 bath · 403sqm · built 2012",
+    "status": "27 days · deadline passed, now $2.69m"
+   },
+   {
+    "image": "images/f3.jpg",
+    "name": "67 Dobson St, Ascot",
+    "spec": "4 bed · 3 bath · 405sqm",
+    "status": "55 days · was $2.90m, now $2.60m"
+   },
+   {
+    "image": "images/c3.jpg",
+    "name": "38 Balowrie St, Hamilton",
+    "spec": "4 bed · 3 bath · 405sqm",
+    "status": "104 days · auction, now $2.58m"
+   },
+   {
+    "image": "images/c2.jpg",
+    "name": "34 Hipwood Rd, Hamilton",
+    "spec": "4 bed · 2 bath · 433sqm",
+    "status": "68 days · now from $2.90m"
+   }
+  ],
+  "fast": [
+   {
+    "image": "images/c4.jpg",
+    "value": "11 days",
+    "caption": "17 Shakespeare St · sold $3.10m"
+   },
+   {
+    "image": "images/f2.jpg",
+    "value": "24 days",
+    "caption": "6 Wordsworth St · sold $1.90m"
+   },
+   {
+    "image": "images/f1.jpg",
+    "value": "28 days",
+    "caption": "68 Princess St · sold $2.17m"
+   }
+  ],
+  "caption": "Images are AI-generated for illustration; live reports use Stash listing photos. Days on market as at 28 Oct 2026."
+ },
+ "campaigns": {
+  "takeaway": "Homes that started above the market sold 6–17% below their opening price, after 5–9 months on the market.",
+  "slow": [
+   {
+    "address": "7 Atkinson St, Hamilton",
+    "bdba": "4/3",
+    "land": "401",
+    "story": "Withdrawn at $3.95m after 112 days; relisted at $3.65m",
+    "first": 3.95,
+    "sold": 3.3,
+    "date": "Aug ’26",
+    "days": 170
+   },
+   {
+    "address": "33 Abbott St, Ascot",
+    "bdba": "4/2",
+    "land": "572",
+    "story": "Auction, then priced at $3.299m",
+    "first": 3.3,
+    "sold": 2.8,
+    "date": "Oct ’26",
+    "days": 162
+   },
+   {
+    "address": "48 Queens Rd, Hamilton",
+    "bdba": "5/3",
+    "land": "637",
+    "story": "Two withdrawn campaigns; third at $2.70m",
+    "first": 2.7,
+    "sold": 2.55,
+    "date": "Jun ’26",
+    "days": 261
+   },
+   {
+    "address": "86 Brisbane St, Bulimba",
+    "bdba": "5/3",
+    "land": "450",
+    "story": "New build; passed in at auction Nov ’25",
+    "first": null,
+    "sold": 3.325,
+    "date": "Jun ’26",
+    "days": 235
+   }
+  ],
+  "fast": [
+   {
+    "address": "17 Shakespeare St",
+    "sold": "$3.10m",
+    "days": 11
+   },
+   {
+    "address": "6 Wordsworth St",
+    "sold": "$1.90m",
+    "days": 24
+   },
+   {
+    "address": "68 Princess St",
+    "sold": "$2.17m",
+    "days": 28
+   }
+  ],
+  "note": "The pattern is consistent: a home priced in line with the market from day one sells within a month. A home that starts high usually sells for less in the end, and takes months longer."
+ },
+ "position": {
+  "takeaway": "Your guide sits above every adjusted comparable sale except two larger, newer 5-bed homes, and above most competing listings.",
+  "adjusted": [
+   [
+    "14 McConnell (adj.)",
+    3.13
+   ],
+   [
+    "68 Princess (adj.)",
+    2.23
+   ],
+   [
+    "17 Shakespeare (adj.)",
+    2.83
+   ],
+   [
+    "86 Brisbane (adj.)",
+    3.29
+   ],
+   [
+    "6 Wordsworth (adj.)",
+    1.9
+   ]
+  ],
+  "guides": [
+   [
+    "38 Balowrie",
+    2.58
+   ],
+   [
+    "67 Dobson",
+    2.6
+   ],
+   [
+    "7 Myuna",
+    2.69
+   ],
+   [
+    "34 Hipwood",
+    2.9
+   ],
+   [
+    "13 Shakespeare",
+    2.99
+   ]
+  ],
+  "note": "Recent sales are adjusted to your home's size, bathrooms, parking and pool. The two sales above your guide are 5-bed homes of 332–415sqm floor area; yours is 206sqm.",
+  "resale": {
+   "value": "+3% in 14 months",
+   "title": "7 Myuna St, Balmoral: the closest match on the market",
+   "body": "4 bed, 403sqm, built 2012. Sold for $2.61m in Aug ’25. Its best-offers deadline on 19 Oct passed without a sale, and it is now asking $2.69m, only 3% above its last sale."
+  },
+  "growth_note": "Over the past 12 months, Bulimba 4-bed houses rose just 2.3%, while 5-beds rose 13.8%. The market is rewarding size, and a 4-bed home's price has to reflect that."
+ },
+ "options": {
+  "intro": "There are three ways forward, and the decision is yours. Your agent will talk you through how each option fits your timing and goals.",
+  "items": [
+   {
+    "title": "A · Hold the current guide",
+    "involves": "Keep offers over $2.95m and continue the campaign.",
+    "outcome": "On current evidence, the campaign is likely to run past 60 days, like the competing listings. Buyers start to ask why it hasn't sold, and the final price tends to come in lower."
+   },
+   {
+    "title": "B · Align the guide to the market",
+    "involves": "Move the guide to offers over $2.58m, inside the range where comparable homes sell.",
+    "outcome": "Opens the home to buyers searching up to $2.75m, re-alerts portal watchers, and gives buyers already in the market a reason to inspect again."
+   },
+   {
+    "title": "C · Set a date: best offers by",
+    "involves": "Keep the guide at $2.58m–$2.79m and set a best-offers deadline 14–21 days out.",
+    "outcome": "Creates urgency and lets buyers compete. Your reserve stays protected: no offer has to be accepted."
+   }
+  ]
+ },
+ "next": {
+  "image": "images/f3.jpg",
+  "intro": "Once you've chosen a direction, we can refresh the campaign within 48 hours and have it in front of every active buyer this weekend.",
+  "steps": [
+   "Agree the refreshed guide and offers date",
+   "Refresh the lead image (pool, twilight) and relaunch the portal listing",
+   "Call every buyer who has enquired so far and invite them back",
+   "Weekly report on enquiries, inspections and buyer price feedback"
+  ],
+  "contact": "Dwellicious · dwellicious.com.au",
+  "disclaimer": "The property address is fictional and images are AI-generated for illustration. Market evidence from Stash Property (stashproperty.com.au), as at 28 Oct 2026. An indicative market review, not a formal valuation."
+ }
+}

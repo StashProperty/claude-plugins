@@ -1,0 +1,362 @@
+{
+ "report_date": "28 October 2026",
+ "month_year": "October 2026",
+ "prepared_by": "Dwellicious",
+ "subject": {
+  "address": "27 Riverbend Terrace, Bulimba",
+  "specs": "4 bed · 3 bath · 2 car · pool · 405sqm · built 2014",
+  "hero": "images/hero.jpg"
+ },
+ "cover_stats": [
+  {
+   "label": "Bulimba house median",
+   "value": "$2.20m"
+  },
+  {
+   "label": "Bulimba houses · 10-year growth",
+   "value": "+98%"
+  }
+ ],
+ "home": {
+  "stats": [
+   {
+    "label": "Land",
+    "value": "405sqm",
+    "sub": "Standard Bulimba lot"
+   },
+   {
+    "label": "Floor area",
+    "value": "206sqm",
+    "sub": "Two storey, 4 bed, 3 bath"
+   },
+   {
+    "label": "Built",
+    "value": "2014",
+    "sub": "12 years old, 2 car, pool"
+   },
+   {
+    "label": "Rental estimate",
+    "value": "$1,400/wk",
+    "sub": "Bulimba 4-bed median"
+   }
+  ],
+  "buyers_see": [
+   "A 2014 two-storey home: no renovation needed, unlike much of Bulimba's 4-bed stock.",
+   "Three bathrooms, which is rare at this price point.",
+   "An inground pool: Bulimba buyers expect one above $2.2m.",
+   "No character overlay, so buyers can extend or renovate freely.",
+   "Walk to Oxford Street and the Apollo Rd CityCat, with the Bulimba Barracks riverfront precinct under way nearby.",
+   "Flood: Brisbane River FPA5, the lowest-likelihood band. A FloodWise report answers buyer questions up front."
+  ],
+  "history": [
+   {
+    "value": "$0.59m",
+    "label": "Land, Jun ’13"
+   },
+   {
+    "value": "$1.04m",
+    "label": "Bought new, Jun ’14"
+   },
+   {
+    "value": "+98%",
+    "label": "Bulimba houses, 10 yrs"
+   }
+  ],
+  "source": "Source: Stash Property, 28 Oct 2026. The address is fictional and images are AI-generated."
+ },
+ "market": {
+  "competition_label": "Your competition · 4–5 bed homes for sale nearby",
+  "competition": [
+   {
+    "listing": "7 Myuna St, Balmoral",
+    "home": "4/2 · 403sqm",
+    "asking": "Offers over $2.69m",
+    "days": "27",
+    "status": "Deadline 19 Oct passed"
+   },
+   {
+    "listing": "67 Dobson St, Ascot",
+    "home": "4/3 · 405sqm",
+    "asking": "$2.60m",
+    "days": "55",
+    "status": "Was offers over $2.90m"
+   },
+   {
+    "listing": "38 Balowrie St, Hamilton",
+    "home": "4/3 · 405sqm",
+    "asking": "$2.58m",
+    "days": "104",
+    "status": "Auction, then $2.60m+"
+   },
+   {
+    "listing": "34 Hipwood Rd, Hamilton",
+    "home": "4/2 · 433sqm",
+    "asking": "Offers from $2.90m",
+    "days": "68",
+    "status": "By negotiation, now priced"
+   },
+   {
+    "listing": "13 Shakespeare St",
+    "home": "5/4 · 587sqm",
+    "asking": "Offers from $2.99m",
+    "days": "52",
+    "status": "Deadline 30 Sep passed"
+   },
+   {
+    "listing": "192 Brisbane St",
+    "home": "5/4 · 804sqm",
+    "asking": "For sale",
+    "days": "28",
+    "status": "Top offers 24 Oct passed"
+   }
+  ],
+  "competition_takeaway": "Four of the six have passed a deadline or auction unsold. Buyers are active but price-sensitive.",
+  "suburb_label": "Bulimba house market · Stash Property",
+  "suburb_rows": [
+   [
+    "Median price",
+    "$2.20m",
+    "12 months to Sep ’26; 4-bed upper quartile $2.64m+"
+   ],
+   [
+    "2-year trend",
+    "$1.78m to $2.20m",
+    "Annual medians Sep ’24 to Sep ’26 (+24%)"
+   ],
+   [
+    "12-month growth",
+    "+8.9%",
+    "4-bed +2.3% · 5-bed +13.8%"
+   ],
+   [
+    "Days on market",
+    "27 days",
+    "44 days in the Sep ’26 quarter: slowing"
+   ],
+   [
+    "Houses for sale",
+    "17",
+    "9 new in 30 days; 4 listed over 60 days"
+   ],
+   [
+    "Sales, 12 months",
+    "98",
+    "7 since August"
+   ],
+   [
+    "Auction clearance",
+    "51%",
+    "Competitive pricing matters"
+   ],
+   [
+    "Stock · vacancy",
+    "0.9% · 1.5%",
+    "Low supply, tight rentals"
+   ],
+   [
+    "Long-run growth",
+    "+98.5% in 10 yrs",
+    "3-yr CAGR 11.2% · 10-yr CAGR 7.1%"
+   ]
+  ],
+  "supports_heading": "What supports value in Bulimba",
+  "supports": [
+   "4.1km to the Brisbane CBD, with the CityCat and Oxford Street on the doorstep",
+   "Population up 13.8% in 10 years (7,623 residents)",
+   "Median household income $2,805/wk; 75% of houses owner-occupied",
+   "Socio-economic advantage (IRSAD) in Australia's top 1% of suburbs",
+   "Local government schools average the 90th ICSEA percentile",
+   "Bulimba Barracks riverfront redevelopment adding new amenity"
+  ],
+  "footnote": "Address fictional. Sales and market data from Stash Property, 28 Oct 2026."
+ },
+ "sales": {
+  "intro": "The most relevant house sales within 500m this year. On the next page each one is adjusted to match your home, and we show how much each has gained in value.",
+  "label": "Comparable sales · within 500m · 2026",
+  "cards": [
+   {
+    "image": "images/f1.jpg",
+    "name": "68 Princess St · 471m away",
+    "spec": "4 bed · 2 bath · 400sqm · 1920 · pool",
+    "status": "Sold $2.17m · Jul ’26"
+   },
+   {
+    "image": "images/c4.jpg",
+    "name": "17 Shakespeare St · 286m away",
+    "spec": "5 bed · 3 bath · 463sqm · 2016 · pool",
+    "status": "Sold $3.10m · Sep ’26 · 11 days on market"
+   },
+   {
+    "image": "images/f2.jpg",
+    "name": "6 Wordsworth St · 473m away",
+    "spec": "5 bed · 3 bath · 400sqm · 2000 · no pool",
+    "status": "Sold $1.90m · Jul ’26 · 24 days on market"
+   },
+   {
+    "image": "images/c2.jpg",
+    "name": "14 McConnell St · 140m away",
+    "spec": "2023 rebuild · 332sqm floor (yours 206)",
+    "status": "Sold $3.51m · Sep ’26 · 81 days on market"
+   }
+  ],
+  "on_market_label": "Your closest competition · 4-bed homes for sale now",
+  "on_market": [
+   {
+    "image": "images/c1.jpg",
+    "value": "$2.69m",
+    "caption": "7 Myuna St · deadline passed"
+   },
+   {
+    "image": "images/c3.jpg",
+    "value": "$2.58m",
+    "caption": "38 Balowrie St · 104 days"
+   },
+   {
+    "image": "images/f3.jpg",
+    "value": "$2.60m",
+    "caption": "67 Dobson St · was $2.90m"
+   }
+  ],
+  "caption": "Images are AI-generated for illustration; live reports use Stash listing photos. Prices and days from Stash Property, 28 Oct 2026."
+ },
+ "compare": {
+  "intro": "Each sale is adjusted to your home: land $800/sqm · bathroom $40k · car space $20k · pool $65k · floor area $3,000/sqm where recorded. Your home: 405sqm, 3 bath, 2 car, pool, 206sqm.",
+  "rows": [
+   [
+    "14 McConnell St",
+    "$3.51m",
+    "–",
+    "–",
+    "–",
+    "–",
+    "-$378k",
+    "$3.13m",
+    "HIGH"
+   ],
+   [
+    "68 Princess St",
+    "$2.17m",
+    "+$4k",
+    "+$40k",
+    "–",
+    "–",
+    "+$18k",
+    "$2.23m",
+    "HIGH"
+   ],
+   [
+    "17 Shakespeare St",
+    "$3.10m",
+    "-$46k",
+    "–",
+    "–",
+    "–",
+    "-$219k",
+    "$2.83m",
+    "MED"
+   ],
+   [
+    "86 Brisbane St",
+    "$3.33m",
+    "-$36k",
+    "–",
+    "–",
+    "–",
+    "n/a",
+    "$3.29m",
+    "MED"
+   ],
+   [
+    "6 Wordsworth St",
+    "$1.90m",
+    "+$4k",
+    "–",
+    "+$20k",
+    "+$65k",
+    "-$90k",
+    "$1.90m",
+    "MED"
+   ]
+  ],
+  "footnote": "Adjusted = what each sale would likely have fetched if it were your home. HIGH = closest match on size, age and location; MED = useful but less alike. 86 Brisbane St has no floor area recorded, so its adjusted value is likely on the high side. How these combine into a price is on page 6.",
+  "context": [
+   {
+    "value": "$1.04m",
+    "caption": "What you paid, new, Jun ’14"
+   },
+   {
+    "value": "7.1% a year",
+    "caption": "Bulimba house growth, 10-yr average"
+   },
+   {
+    "value": "+8.9%",
+    "caption": "Bulimba houses, last 12 months"
+   }
+  ],
+  "changes": [
+   {
+    "title": "17 Shakespeare St · +100%",
+    "body": "$1.55m Mar ’16 to $3.10m Sep ’26. Same 2016 home: pure market growth."
+   },
+   {
+    "title": "68 Princess St · +91%",
+    "body": "$1.14m Oct ’20 to $2.17m Jul ’26. Extended from 3 to 4 bed in between."
+   },
+   {
+    "title": "6 Wordsworth St · +65%",
+    "body": "$1.15m Mar ’21 to $1.90m Jul ’26. Largely unchanged home."
+   },
+   {
+    "title": "14 McConnell St · rebuilt",
+    "body": "$0.58m Aug ’11 to $3.51m Sep ’26. Knocked down and rebuilt in 2023."
+   }
+  ],
+  "changes_note": "Also: 7 Myuna St sold for $2.61m in Aug ’25 and is now asking offers over $2.69m (+3% in 14 months). Prior and recent sale prices from Stash Property."
+ },
+ "price": {
+  "intro": "We weight the closest sales most, the wider group next, and use Stash's automated valuation as a check.",
+  "weights": [
+   [
+    "Closest matches: 14 McConnell, 68 Princess (HIGH)",
+    "$2.68m",
+    "60%"
+   ],
+   [
+    "Wider group: 3 sales (MED)",
+    "$2.67m",
+    "30%"
+   ],
+   [
+    "Stash automated valuation (AVM)",
+    "$2.47m",
+    "10%"
+   ],
+   [
+    "Weighted value",
+    "$2.66m",
+    "100%"
+   ]
+  ],
+  "weights_note": "The AVM sits lower because it can't see your pool, third bathroom or 2014 build quality, so it carries the least weight. The range runs from 3% below to 5% above the weighted value, to allow for condition and presentation, which we confirm at inspection.",
+  "range": "$2.58m – $2.79m",
+  "range_sub": "27 Riverbend Terrace, Bulimba, in today's market, well presented",
+  "tiles": [
+   {
+    "label": "Weighted value",
+    "value": "$2.66m"
+   },
+   {
+    "label": "Suggested price guide",
+    "value": "Offers over $2.50m",
+    "highlight": true
+   },
+   {
+    "label": "Stash AVM",
+    "value": "$2.47m"
+   }
+  ],
+  "why_heading": "Why the guide sits below the range",
+  "why": "Bulimba buyers are active but price-sensitive. Four of the six competing homes have passed a deadline or auction unsold, and days on market rose to 44 in the September quarter. A guide of offers over $2.50m puts your home in front of every buyer searching from $2.5m, and lets competition carry the price into the range.\n\nYour reserve and sale method are your call. We'll talk both through with you.",
+  "disclaimer": "This appraisal is an opinion of likely selling price based on comparable sales and market data from Stash Property as at 28 October 2026. It is not a formal valuation and should not be relied on for lending. The address is fictional and images are AI-generated for illustration."
+ }
+}

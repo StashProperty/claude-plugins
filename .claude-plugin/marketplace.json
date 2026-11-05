@@ -1,0 +1,15 @@
+{
+  "name": "stash",
+  "owner": { "name": "Stash Property", "email": "kris@stashproperty.com.au" },
+  "metadata": {
+    "description": "Claude plugins from Stash Property: Australian property valuations, appraisals and reports on live Stash data."
+  },
+  "plugins": [
+    {
+      "name": "stash-property",
+      "source": "./plugins/stash-property",
+      "description": "10 property skills (CMA, appraisal, pre-appraisal, campaign review, feaso, planning, deals, suburbs, reno case studies, report export) plus the Stash MCP connector.",
+      "category": "productivity"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+ "name": "Dwellicious",
+ "website": "dwellicious.com.au",
+ "primary": "#0D2D4F",
+ "accent": "#2AC4EA",
+ "accent_dark": "#1597B8",
+ "tint": "#E8F7FC",
+ "text": "#262E3B",
+ "muted": "#5E6B7C",
+ "on_dark_label": "#BDBDBD",
+ "logo": null
+}

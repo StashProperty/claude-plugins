@@ -1,0 +1,311 @@
+{
+ "report_date": "28 October 2026",
+ "prepared_by": "Dwellicious",
+ "subject": {
+  "address": "27 Riverbend Terrace, Bulimba",
+  "specs": "4 bed · 3 bath · 2 car · pool · 405sqm · built 2014",
+  "hero": "images/hero.jpg"
+ },
+ "avm": "$2.47m",
+ "indicative_range": "$2.58m – $2.79m",
+ "property": {
+  "stats": [
+   {
+    "label": "Weighted value",
+    "value": "$2.66m",
+    "sub": "15 sales within 1km, adjusted"
+   },
+   {
+    "label": "Stash AVM",
+    "value": "$2.47m",
+    "sub": "High confidence ($2.10m–$2.85m)"
+   },
+   {
+    "label": "Owner hold",
+    "value": "12 yrs",
+    "sub": "Bought $1.04m, Jun ’14"
+   },
+   {
+    "label": "Rental estimate",
+    "value": "$1,400/wk",
+    "sub": "~2.7% gross yield"
+   }
+  ],
+  "profile": [
+   "27 Riverbend Terrace, Bulimba (fictional)",
+   "",
+   "Detached house, two storey",
+   "4 bed · 3 bath · 2 car · inground pool",
+   "405sqm land · 206sqm floor area",
+   "Built 2014",
+   "",
+   "Zone: low density residential, no character overlay",
+   "",
+   "Flood: Brisbane River FPA5 (lowest-likelihood band). No overland flow mapped.",
+   "",
+   "No bushfire, heritage or biodiversity overlays",
+   "",
+   "Nearby: walk to Oxford St and the Apollo Rd CityCat; Bulimba Barracks riverfront precinct under way"
+  ],
+  "history": [
+   {
+    "value": "$0.59m",
+    "label": "Land, Jun ’13"
+   },
+   {
+    "value": "$1.04m",
+    "label": "Bought new, Jun ’14"
+   },
+   {
+    "value": "$2.66m",
+    "label": "Today est. (+156%)"
+   }
+  ],
+  "source": "Source: Stash Property, Bulimba houses, 28 Oct 2026. Address fictional; images AI-generated."
+ },
+ "sales": {
+  "intro": "Each sale adjusted to this home: land $800/sqm, bathroom $40k, car $20k, pool $65k, floor area $3,000/sqm. Weighted 60/30/10 with the AVM = $2.66m.",
+  "label": "Recent comparable sales · within 1km",
+  "cards": [
+   {
+    "image": "images/f1.jpg",
+    "name": "68 Princess St · 471m away",
+    "spec": "4 bed · 2 bath · 400sqm · 1920 · pool",
+    "status": "$2.17m Jul ’26 · adjusted $2.23m"
+   },
+   {
+    "image": "images/c4.jpg",
+    "name": "17 Shakespeare St · 286m away",
+    "spec": "5 bed · 3 bath · 463sqm · 2016 · pool",
+    "status": "$3.10m in 11 days · adjusted $2.83m"
+   },
+   {
+    "image": "images/f2.jpg",
+    "name": "6 Wordsworth St · 473m away",
+    "spec": "5 bed · 3 bath · 400sqm · 2000 · no pool",
+    "status": "$1.90m in 24 days · adjusted $1.90m"
+   },
+   {
+    "image": "images/c2.jpg",
+    "name": "14 McConnell St · 140m away",
+    "spec": "2023 rebuild · 332sqm floor (ours 206)",
+    "status": "$3.51m in 81 days · adjusted $3.13m"
+   }
+  ],
+  "on_market_label": "Currently on the market · 4-bed homes nearby",
+  "on_market": [
+   {
+    "image": "images/c1.jpg",
+    "value": "$2.69m",
+    "caption": "7 Myuna St · deadline passed"
+   },
+   {
+    "image": "images/c3.jpg",
+    "value": "$2.58m",
+    "caption": "38 Balowrie St · 104 days"
+   },
+   {
+    "image": "images/f3.jpg",
+    "value": "$2.60m",
+    "caption": "67 Dobson St · was $2.90m"
+   }
+  ],
+  "caption": "Images are AI-generated for illustration; live reports use Stash listing photos. Prices and days from Stash Property, 28 Oct 2026."
+ },
+ "evidence": {
+  "intro": "Each sale is adjusted to this home: land $800/sqm · bathroom $40k · car space $20k · pool $65k · floor area $3,000/sqm where recorded. Subject: 405sqm, 3 bath, 2 car, pool, 206sqm.",
+  "rows": [
+   [
+    "14 McConnell St",
+    "$3.51m",
+    "–",
+    "–",
+    "–",
+    "–",
+    "-$378k",
+    "$3.13m",
+    "HIGH"
+   ],
+   [
+    "68 Princess St",
+    "$2.17m",
+    "+$4k",
+    "+$40k",
+    "–",
+    "–",
+    "+$18k",
+    "$2.23m",
+    "HIGH"
+   ],
+   [
+    "17 Shakespeare St",
+    "$3.10m",
+    "-$46k",
+    "–",
+    "–",
+    "–",
+    "-$219k",
+    "$2.83m",
+    "MED"
+   ],
+   [
+    "86 Brisbane St",
+    "$3.33m",
+    "-$36k",
+    "–",
+    "–",
+    "–",
+    "n/a",
+    "$3.29m",
+    "MED"
+   ],
+   [
+    "6 Wordsworth St",
+    "$1.90m",
+    "+$4k",
+    "–",
+    "+$20k",
+    "+$65k",
+    "-$90k",
+    "$1.90m",
+    "MED"
+   ]
+  ],
+  "summary": [
+   [
+    "HIGH average (n=2)",
+    "$2.68m",
+    "60%"
+   ],
+   [
+    "MED average (n=3)",
+    "$2.67m",
+    "30%"
+   ],
+   [
+    "Stash AVM",
+    "$2.47m",
+    "10%"
+   ],
+   [
+    "Weighted value",
+    "$2.66m",
+    "= weighted"
+   ]
+  ],
+  "footnote": "No sale met every HIGH test (same beds, land ±20%, era ±15 yrs, within 800m), so the two closest were promoted. 86 Brisbane St has no floor area recorded and may overstate the MED average by about $0.1m. Indicative range: weighted -3% to +5% = $2.58m–$2.79m, before condition and finish are seen.",
+  "outliers": [
+   {
+    "title": "51 McConnell St · $7.61m",
+    "body": "Riverfront with a jetty, 2025 build. Not comparable."
+   },
+   {
+    "title": "40 Bulimba St · $3.90m",
+    "body": "1,014sqm of land: priced as a site, not a house."
+   },
+   {
+    "title": "86 Brisbane St · $3.33m",
+    "body": "New luxury 5-bed; passed in at auction, 235 days across two campaigns."
+   },
+   {
+    "title": "99 Bulimba St · $3.60m",
+    "body": "549sqm character home, 5 bed. A different buyer."
+   }
+  ],
+  "note": "Prices are actual sale prices from Stash Property. Adjusted values in the table convert each sale to this home."
+ },
+ "market": {
+  "competition_label": "On the market now · 4–5 bed homes nearby",
+  "competition": [
+   {
+    "listing": "7 Myuna St, Balmoral",
+    "home": "4/2 · 403sqm",
+    "asking": "Offers over $2.69m",
+    "days": "27",
+    "status": "Deadline 19 Oct passed"
+   },
+   {
+    "listing": "67 Dobson St, Ascot",
+    "home": "4/3 · 405sqm",
+    "asking": "$2.60m",
+    "days": "55",
+    "status": "Was offers over $2.90m"
+   },
+   {
+    "listing": "38 Balowrie St, Hamilton",
+    "home": "4/3 · 405sqm",
+    "asking": "$2.58m",
+    "days": "104",
+    "status": "Auction, then $2.60m+"
+   },
+   {
+    "listing": "34 Hipwood Rd, Hamilton",
+    "home": "4/2 · 433sqm",
+    "asking": "Offers from $2.90m",
+    "days": "68",
+    "status": "By negotiation, now priced"
+   },
+   {
+    "listing": "13 Shakespeare St",
+    "home": "5/4 · 587sqm",
+    "asking": "Offers from $2.99m",
+    "days": "52",
+    "status": "Deadline 30 Sep passed"
+   },
+   {
+    "listing": "192 Brisbane St",
+    "home": "5/4 · 804sqm",
+    "asking": "For sale",
+    "days": "28",
+    "status": "Top offers 24 Oct passed"
+   }
+  ],
+  "competition_takeaway": "Four of the six have passed a deadline or auction unsold. Larger 5-beds are asking the same money.",
+  "suburb_label": "Bulimba houses · Stash Property",
+  "suburb_rows": [
+   [
+    "Median price",
+    "$2.20m",
+    "4-bed upper quartile is $2.64m+"
+   ],
+   [
+    "12-month growth",
+    "+8.9% all houses",
+    "4-bed +2.3% · 5-bed +13.8%"
+   ],
+   [
+    "Days on market",
+    "50 days (recent sales)",
+    "27-day median over 12 months"
+   ],
+   [
+    "Houses for sale",
+    "17",
+    "9 new in 30 days; 4 listed over 60 days"
+   ],
+   [
+    "Sales since August",
+    "7",
+    "98 over the past 12 months"
+   ],
+   [
+    "Auction clearance",
+    "51%",
+    "Bulimba houses, 12 months"
+   ],
+   [
+    "Long-run growth",
+    "3-yr CAGR 11.2%",
+    "10-yr CAGR 7.1%"
+   ]
+  ],
+  "to_confirm": [
+   "Condition and finish, and any work done since 2014",
+   "Floor area and layout against the 206sqm on record",
+   "Pool approval and safety certificate",
+   "BCC FloodWise report for the address",
+   "The owners' plans and timing"
+  ],
+  "disclaimer": "Agent use only. Address fictional; images AI-generated. Sales and market data from Stash Property, 28 Oct 2026. Not a formal valuation."
+ }
+}
