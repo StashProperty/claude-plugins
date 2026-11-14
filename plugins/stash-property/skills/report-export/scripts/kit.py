@@ -31,7 +31,7 @@ DEFAULT_BRAND = {
     "muted": "#5E6B7C",
     "on_dark_label": "#BDBDBD",
     "logo": None,              # path to a PNG (own brand only), else the name is set in type
-    "heading_font": None,      # optional path to a .ttf; default is the bundled Outfit
+    "heading_font": None,      # optional path to a .ttf; default is Helvetica
 }
 
 
@@ -52,11 +52,12 @@ def load_brand(path=None):
 
 
 def _register_fonts(brand):
-    head = brand.get("heading_font") or os.path.join(HERE, "fonts", "Outfit-Regular.ttf")
-    headb = os.path.join(HERE, "fonts", "Outfit-Bold.ttf")
+    head = brand.get("heading_font")
+    if not head:
+        return "Helvetica", "Helvetica-Bold"
     try:
         pdfmetrics.registerFont(TTFont("Head", head))
-        pdfmetrics.registerFont(TTFont("HeadBold", headb if not brand.get("heading_font") else head))
+        pdfmetrics.registerFont(TTFont("HeadBold", head))
         return "Head", "HeadBold"
     except Exception:
         return "Helvetica", "Helvetica-Bold"

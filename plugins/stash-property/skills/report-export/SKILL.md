@@ -245,9 +245,8 @@ match page for page. The three designed reports are:
 - The scripts draw on the ReportLab canvas in Canva pixel coordinates.
   `kit.py` converts them (pt = px × 0.75, y flipped). Put any new
   component in `kit.py` so all three reports share it.
-- **Fonts:** headings use the bundled Outfit font (`scripts/fonts`, OFL)
-  and body text uses Helvetica. A brand JSON may set `heading_font` to
-  another .ttf.
+- **Fonts:** headings and body use Helvetica. A brand JSON may set
+  `heading_font` to a .ttf the user supplies (e.g. their brand font).
 - **Missing images:** a missing image file draws a grey "Photo"
   placeholder, so the PDF still builds.
 

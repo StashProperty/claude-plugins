@@ -1,6 +1,6 @@
 ---
 # Cache file template — copy this and rename to {council_slug}_{zone_code}.md
-# Save to /mnt/skills/user/planning/cache/
+# Save to cache/ in the planning skill's folder
 #
 # REQUIRED fields below have a value or null. Do NOT leave a required field
 # blank — if you don't know it, write `null` and add a note explaining why.
@@ -13,10 +13,10 @@ zone_code: REPLACE_ME                 # e.g. ldr, r1z, r2
 zone_display: REPLACE_ME              # e.g. Low Density Residential, General Residential Zone
 
 verified_date: YYYY-MM-DD             # date you last confirmed these rules
-source_documents:                     # list of docs from Planning_Documents.xlsx
-  - doc_name: "REPLACE_ME"            # exact name from xlsx Document Name column
+source_documents:                     # list of docs from Planning_Documents.csv
+  - doc_name: "REPLACE_ME"            # exact name from Planning_Documents.csv Document Name column
     doc_type: "REPLACE_ME"            # e.g. Planning Scheme, LEP, DCP
-    source_url: "REPLACE_ME"          # from xlsx Source URL column
+    source_url: "REPLACE_ME"          # from Planning_Documents.csv Source URL column
 source_section: "REPLACE_ME"          # section number(s) within those documents
 
 # REQUIRED fields — subdivision rules

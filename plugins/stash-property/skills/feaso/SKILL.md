@@ -359,7 +359,7 @@ Confirm flood data with council. Note that planning schemes are subject to amend
 When the user asks for a "feaso spreadsheet", "Excel model", "feasibility model",
 or similar:
 
-Read /mnt/skills/public/xlsx/SKILL.md before writing any code.
+If an `xlsx` skill is available, read it before writing any code.
 
 Use openpyxl. Run recalc.py after generating. Fix all errors before presenting.
 Output to /mnt/user-data/outputs/[StreetNo]_[StreetName]_[Suburb]_DevFeaso.xlsx

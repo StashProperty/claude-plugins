@@ -12,7 +12,7 @@ description: >
   "is X subdividable under the rules", "what's the minimum lot size in Y",
   "TBCO check on X", or any direct planning-rule question. Auto-invoked by
   `feaso` STEP 2 and by `cma` Section 5 when needed. Backed by
-  Planning_Documents.xlsx — a national index of 1,146 planning documents
+  Planning_Documents.csv — a national index of 1,146 planning documents
   across 579 LGAs in all 8 Australian states/territories. Self-learning:
   caches extracted rules per council/zone the first time they're requested.
 ---
@@ -92,26 +92,23 @@ baseline entries.
 ## STEP 2 — Look up the planning document(s)
 
 The source of truth for what planning documents exist is
-`/mnt/skills/user/planning/Planning_Documents.xlsx`. This file holds 1,146
+`Planning_Documents.csv` in this skill's folder. This file holds 1,146
 documents across 579 LGAs covering all 8 Australian states/territories.
 
-### Reading the xlsx
+### Reading the index
 
 ```python
-import openpyxl
-wb = openpyxl.load_workbook(
-    '/mnt/skills/user/planning/Planning_Documents.xlsx',
-    data_only=True
-)
-ws = wb['Sheet1']
-# Columns: State, Council/LGA, Document Name, Document Type,
+import csv, os
+# SKILL_DIR = this skill's base directory (shown when the skill loads)
+with open(os.path.join(SKILL_DIR, 'Planning_Documents.csv'), newline='', encoding='utf-8') as f:
+    rows = list(csv.DictReader(f))
+# Columns: State, Council / LGA, Document Name, Document Type,
 #          File Format, Amended On, Source URL
-rows = list(ws.iter_rows(min_row=2, values_only=True))
 ```
 
 Filter rows where:
 - `State` matches the target state (e.g. `'QLD'`)
-- `Council/LGA` matches the target council (case-insensitive contains-match,
+- `Council / LGA` matches the target council (case-insensitive contains-match,
   not strict equality — see "Council name matching" below)
 
 A single LGA typically has multiple documents — a Local Environmental Plan
@@ -139,7 +136,7 @@ DCPs, not the LEP).
 
 ### Council name matching
 
-The xlsx's `Council/LGA` column is heterogeneous:
+The CSV index's `Council / LGA` column is heterogeneous:
 
 - Most rows have a clean council name: `'Brisbane'`, `'City of Sydney'`,
   `'Inner West'`, `'Bellingen'`
@@ -154,10 +151,10 @@ The xlsx's `Council/LGA` column is heterogeneous:
   state-level rows alongside council-specific rows.
 
 Match strategy:
-1. Exact case-insensitive match on `Council/LGA` first
+1. Exact case-insensitive match on `Council / LGA` first
 2. If no match, try contains-match (`'City of Sydney'` matches `'Sydney'`
    query and vice versa)
-3. Always include rows in the same state where `Council/LGA` is empty
+3. Always include rows in the same state where `Council / LGA` is empty
    (state-level instruments)
 4. If still nothing → STEP 4 (gap handling)
 
@@ -166,16 +163,16 @@ Match strategy:
 Once relevant rows are identified, follow the `Source URL` (online) or
 look in `councils/` for a downloaded copy. PDF reading is Phase 2 — for
 Phase 1, prompt the user to paste the relevant rules manually using the
-template. The xlsx tells us WHICH document to read; the user (or Phase 2
+template. The CSV index tells us WHICH document to read; the user (or Phase 2
 automation) extracts the rules.
 
 If the user has placed the PDF locally at
-`/mnt/skills/user/planning/councils/{slug}.pdf`, read it via the `pdf-reading`
-skill at `/mnt/skills/public/pdf-reading/SKILL.md`.
+`councils/{slug}.pdf` in this skill's folder (or attached it to the chat),
+read it with the `pdf-reading` skill if one is available.
 
 ### Slugs are derived, not stored
 
-The xlsx doesn't have a slug column. Derive slugs at query time using:
+The CSV index doesn't have a slug column. Derive slugs at query time using:
 
 ```
 slug = (council_name or '_state_statewide').lower()
@@ -188,7 +185,7 @@ slug = f"{slug}_{state.lower()}"
 So `'City of Brisbane'` + `'QLD'` → `brisbane_qld`. `'Inner West Council'` +
 `'NSW'` → `inner_west_nsw`. Cache file names use these derived slugs.
 
-If the council doesn't appear in the xlsx → STEP 4.
+If the council doesn't appear in the CSV index → STEP 4.
 
 ---
 
@@ -226,7 +223,7 @@ For each zone, capture:
 - `state_overlays` — list (e.g. `["VIC ResCode Cl 55/56"]`, `["NSW SEPP ARH"]`)
 
 **Provenance:**
-- `source_documents` — list of `{doc_name, doc_type, source_url}` entries from xlsx
+- `source_documents` — list of `{doc_name, doc_type, source_url}` entries from the CSV index
 - `source_section` — section number(s) within those documents
 - `verified_date` — today's date when written
 
@@ -235,7 +232,7 @@ If extraction fails or rules are ambiguous → STEP 4.
 ### Writing the cache entry
 
 Write the extracted rules to
-`/mnt/skills/user/planning/cache/{council_slug}_{zone_code}.md` using the
+`cache/{council_slug}_{zone_code}.md` in this skill's folder using the
 template below. Then return the parsed rule set to the caller.
 
 ### Cache file template
@@ -305,7 +302,7 @@ Return a structured object containing all the YAML fields plus:
 
 ## STEP 4 — Gap handling
 
-If the council isn't found in `Planning_Documents.xlsx`, OR the source
+If the council isn't found in `Planning_Documents.csv`, OR the source
 documents can't be parsed reliably, return a structured "manual entry
 required" response and prompt the calling skill to ask the user.
 
@@ -314,15 +311,15 @@ The response shape:
 ```
 {
   manual_entry_required: true,
-  reason: "council_not_in_xlsx" | "doc_extraction_failed" | "zone_not_found",
+  reason: "council_not_in_index" | "doc_extraction_failed" | "zone_not_found",
   council_slug: "...",
   zone_code: "...",
-  candidate_documents: [<rows from xlsx that might apply, even if no exact match>],
+  candidate_documents: [<rows from the CSV index that might apply, even if no exact match>],
   fallback_message: "Planning rules for [council] [zone] are not yet
     cached in the planning skill. To proceed, please confirm the
     following manually: ...",
   required_fields: [<list of required field names>],
-  template_path: "/mnt/skills/user/planning/cache/_template.md"
+  template_path: "cache/_template.md"
 }
 ```
 
@@ -330,7 +327,7 @@ The calling skill (feaso, cma) is responsible for surfacing this to the
 user. Recommended pattern: ask the user to fill in the template, then save
 it to `cache/{council_slug}_{zone_code}.md` so the next query is instant.
 
-If candidate documents exist in the xlsx (e.g. the council is there but
+If candidate documents exist in the CSV index (e.g. the council is there but
 extraction failed), point the user at the relevant Source URL — let them
 read the planning scheme themselves and paste the key numbers back.
 
@@ -351,17 +348,17 @@ real financial harm.
   source documents can't be extracted, return `manual_entry_required: true`
   and let the caller handle it. Do not fall back to "typical" rules from
   another council.
-- **The xlsx is the source of truth for what documents exist.** The cache
+- **The CSV index is the source of truth for what documents exist.** The cache
   is the source of truth for what rules have been extracted. Don't try to
-  derive rules from cache without first checking the xlsx — and don't try
-  to bypass the xlsx with hardcoded paths.
+  derive rules from cache without first checking the CSV index — and don't try
+  to bypass the CSV index with hardcoded paths.
 - **Cache extracts are valid for 24 months.** After that, flag
   `verification_stale: true` and let the calling skill warn the user.
 - **The skill does not produce reports.** It returns structured rule data
   to be consumed by feaso, cma, or any other caller.
 - **State-level overlays must be returned alongside zone rules.** A VIC
-  R1Z extract without ResCode Cl.55/56 is incomplete. The xlsx flags
-  state-level instruments by leaving `Council/LGA` blank — always include
+  R1Z extract without ResCode Cl.55/56 is incomplete. The CSV index flags
+  state-level instruments by leaving `Council / LGA` blank — always include
   matching state rows in the lookup.
 - **TBCO / character / heritage overlays are conditional, not zone-level.**
   Set `character_overlay: conditional` when the overlay applies to some
@@ -378,9 +375,9 @@ real financial harm.
   rename existing ones.
 - **One zone per cache file.** Don't combine LDR + CR2 in one file even
   though they share a source PDF. Separate files = atomic updates.
-- **Don't modify `Planning_Documents.xlsx` from inside the skill.** It is
+- **Don't modify `Planning_Documents.csv` from inside the skill.** It is
   read-only here. If amendments are needed (new councils, updated dates),
-  the user maintains the xlsx separately and re-uploads it.
+  the user maintains the CSV index separately and ships it in a new plugin version.
 
 ---
 
@@ -388,13 +385,13 @@ real financial harm.
 
 - Automated PDF extraction — Claude reads the relevant section of a
   council document and writes the cache entry without user intervention
-- Smart matching for messy NSW rows — when `Council/LGA` is a precinct or
+- Smart matching for messy NSW rows — when `Council / LGA` is a precinct or
   address, derive parent council from the source URL automatically
 - State-overlay extraction (ResCode, SEPPs) into dedicated cache entries
   that are auto-merged with council-specific rules at read time
 - Cross-council comparison ("how does this zone compare to neighbouring
   council X?")
-- Planning amendment alerts when `Amended On` dates change in the xlsx
+- Planning amendment alerts when `Amended On` dates change in the CSV index
 
 These are NOT built. Phase 1 is manual entry with structured caching,
-backed by the xlsx as a directory of available documents.
+backed by the CSV index as a directory of available documents.
