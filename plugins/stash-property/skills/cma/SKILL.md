@@ -494,7 +494,8 @@ scripts.
 **Build:**
 
 - **PDF:** fill `report-export/examples/appraisal_example.json` with this
-  report's data and run `report-export/scripts/build_appraisal.py`. The
+  report's data and run `build_appraisal.py` (extract it from
+  `report-export/scripts.md` as `report-export` PDF step 3 shows). The
   layout is fixed, so every user's PDF matches the reference.
 - **Canva:** start from the Property Appraisal template link in
   `report-export` → "Canva templates" if one is listed. Otherwise follow

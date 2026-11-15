@@ -103,7 +103,8 @@ All formats share these rules:
 ### PDF
 
 **For the three designed reports, always use the fixed build scripts.** Don't
-write new layout code. The scripts are in this skill's `scripts/` folder:
+write new layout code. The scripts are stored as code blocks in this skill's
+`scripts.md` (the plugin ships text only):
 
 | Report | Script | Example data |
 |---|---|---|
@@ -119,8 +120,21 @@ write new layout code. The scripts are in this skill's `scripts/` folder:
    accent_on_dark, tint, text, muted, logo. `examples/brand_example.json`
    shows the format. Leave it out for the Stash default.
 3. Find the skill folder (the folder holding this SKILL.md). If you're unsure where it is, run
-   `find / -path '*report-export/scripts/kit.py' 2>/dev/null | head -1`.
-   Then run `python3 <skill>/scripts/build_<report>.py data.json out.pdf
+   `find / -path '*report-export/scripts.md' 2>/dev/null | head -1`.
+   Extract the scripts once per session (writes `kit.py` and the three
+   `build_*.py` files to `/tmp/stash-report`):
+
+   ```bash
+   python3 - <skill>/scripts.md /tmp/stash-report <<'PY'
+   import os, re, sys
+   src, out = sys.argv[1], sys.argv[2]
+   os.makedirs(out, exist_ok=True)
+   for name, code in re.findall(r"^### (\S+\.py)\n\n```python\n(.*?)^```$", open(src).read(), re.S | re.M):
+       open(os.path.join(out, name), "w").write(code)
+   PY
+   ```
+
+   Then run `python3 /tmp/stash-report/build_<report>.py data.json out.pdf
    [brand.json]`. It needs only reportlab and Pillow; install them with
    `pip install reportlab pillow` if missing.
 4. Render with `pdftoppm -r 50` and look at every page. Long text shrinks
@@ -244,7 +258,7 @@ match page for page. The three designed reports are:
 
 - The scripts draw on the ReportLab canvas in Canva pixel coordinates.
   `kit.py` converts them (pt = px × 0.75, y flipped). Put any new
-  component in `kit.py` so all three reports share it.
+  component in `kit.py` (in `scripts.md`) so all three reports share it.
 - **Fonts:** headings and body use Helvetica. A brand JSON may set
   `heading_font` to a .ttf the user supplies (e.g. their brand font).
 - **Missing images:** a missing image file draws a grey "Photo"
