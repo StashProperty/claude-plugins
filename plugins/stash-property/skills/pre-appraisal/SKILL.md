@@ -108,7 +108,7 @@ The page kit and coordinates are in `report-export` → "Report layout kit".
 Follow `report-export` STEP C for the chosen format, using the layout kit.
 
 - **Canva:** start from the Pre-Appraisal Briefing template link in `report-export` → "Canva templates". If none is listed, `copy-design` a previous briefing; otherwise generate and rebuild to the layout kit.
-- **PDF:** fill `report-export/examples/briefing_example.json` with this property's data and run `build_briefing.py data.json out.pdf [brand.json]` (extract it from `report-export/scripts.md` as `report-export` PDF step 3 shows). Don't write new layout code. Get photos with the thumbnail method in `report-export`.
+- **PDF:** fill `report-export/examples/briefing_example.json` with this property's data and build it with the `report-export` PDF layout spec. Get photos with the thumbnail method in `report-export`.
 - **Name:** `Pre-Appraisal_<Street>_<Suburb>`. In Canva: "Pre-Appraisal Briefing – <address>".
 
 ## Finish

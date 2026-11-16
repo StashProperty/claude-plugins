@@ -13,10 +13,10 @@ zone_code: REPLACE_ME                 # e.g. ldr, r1z, r2
 zone_display: REPLACE_ME              # e.g. Low Density Residential, General Residential Zone
 
 verified_date: YYYY-MM-DD             # date you last confirmed these rules
-source_documents:                     # list of docs from Planning_Documents.csv
-  - doc_name: "REPLACE_ME"            # exact name from Planning_Documents.csv Document Name column
+source_documents:                     # list of docs from Planning_Documents.json
+  - doc_name: "REPLACE_ME"            # exact name from Planning_Documents.json Document Name column
     doc_type: "REPLACE_ME"            # e.g. Planning Scheme, LEP, DCP
-    source_url: "REPLACE_ME"          # from Planning_Documents.csv Source URL column
+    source_url: "REPLACE_ME"          # from Planning_Documents.json Source URL column
 source_section: "REPLACE_ME"          # section number(s) within those documents
 
 # REQUIRED fields — subdivision rules

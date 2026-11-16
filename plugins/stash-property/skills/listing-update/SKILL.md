@@ -210,15 +210,12 @@ General build rules for each format live in `report-export`. The listing-update 
 ### PDF
 
 Fill `report-export/examples/campaign_review_example.json` with this
-campaign's data. Prices that drive charts are numbers in $m. Extract the
-scripts from `report-export/scripts.md` (see `report-export` PDF step 3), then run:
+campaign's data. Prices that drive charts are numbers in $m. Then build it
+with the `report-export` PDF layout spec.
 
-    python3 /tmp/stash-report/build_campaign_review.py data.json out.pdf [brand.json]
-
-The script draws the DOM bars, the dumbbell and the ranked dot chart
-natively, in the brand colours. Don't write new layout code. Render with
-`pdftoppm` and check every page against a build of
-`report-export/examples/campaign_review_example.json`.
+Draw the DOM bars, the dumbbell and the ranked dot chart natively with
+ReportLab shapes in the brand colours (no chart images). Render with
+`pdftoppm` and check every page.
 
 ### Word (.docx)
 

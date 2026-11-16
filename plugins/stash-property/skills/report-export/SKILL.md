@@ -102,46 +102,45 @@ All formats share these rules:
 
 ### PDF
 
-**For the three designed reports, always use the fixed build scripts.** Don't
-write new layout code. The scripts are stored as code blocks in this skill's
-`scripts.md` (the plugin ships text only):
+Build the PDF yourself with ReportLab (`pip install reportlab pillow` if
+missing). The plugin ships no code, so write one small build script per
+report, following the layout spec below so every user's PDF looks the same.
 
-| Report | Script | Example data |
+| Report | Pages | Example data |
 |---|---|---|
-| Property Appraisal (seller) | `build_appraisal.py` | `examples/appraisal_example.json` |
-| Pre-Appraisal Briefing | `build_briefing.py` | `examples/briefing_example.json` |
-| Campaign Review | `build_campaign_review.py` | `examples/campaign_review_example.json` |
+| Property Appraisal (seller) | 6: cover · Your home · Your market · Recent sales near you · Compared with your home · Our appraisal (price last) | `examples/appraisal_example.json` |
+| Pre-Appraisal Briefing | 5: cover · The property · Comparable sales · Where the evidence points · Competition and market | `examples/briefing_example.json` |
+| Campaign Review | cover · campaign stats and charts (days on market bars, price dumbbell, ranked dot chart) · comparable photo cards · This week | `examples/campaign_review_example.json` |
 
 1. Copy the matching example JSON and replace every value with this
    report's data. Keep the same keys and list lengths (4 photo cards, 3
-   on-market tiles, 4 value-change blocks, and so on). Image paths are
-   relative to the JSON file.
-2. Write the brand JSON: name, primary, accent, accent_dark,
-   accent_on_dark, tint, text, muted, logo. `examples/brand_example.json`
-   shows the format. Leave it out for the Stash default.
-3. Find the skill folder (the folder holding this SKILL.md). If you're unsure where it is, run
-   `find / -path '*report-export/scripts.md' 2>/dev/null | head -1`.
-   Extract the scripts once per session (writes `kit.py` and the three
-   `build_*.py` files to `/tmp/stash-report`):
-
-   ```bash
-   python3 - <skill>/scripts.md /tmp/stash-report <<'PY'
-   import os, re, sys
-   src, out = sys.argv[1], sys.argv[2]
-   os.makedirs(out, exist_ok=True)
-   for name, code in re.findall(r"^### (\S+\.py)\n\n```python\n(.*?)^```$", open(src).read(), re.S | re.M):
-       open(os.path.join(out, name), "w").write(code)
-   PY
-   ```
-
-   Then run `python3 /tmp/stash-report/build_<report>.py data.json out.pdf
-   [brand.json]`. It needs only reportlab and Pillow; install them with
-   `pip install reportlab pillow` if missing.
-4. Render with `pdftoppm -r 50` and look at every page. Long text shrinks
-   to fit one line, but check for wrapping in the body text and shorten
-   the wording if needed.
-5. Compare against the layout you get by building the matching file in
-   `examples/` (e.g. `appraisal_example.json`) with the same script.
+   on-market tiles, 4 value-change blocks, and so on). The JSON is the
+   content plan: one section per top-level key, in that order.
+2. Brand: name, primary, accent, accent_dark, accent_on_dark, tint, text,
+   muted, logo (`examples/brand_example.json`). Stash default: primary
+   #32374A, accent #3555FF, accent_on_dark #9AABFF, tint #EEF1FF, text
+   #333333, muted #5E6B7C.
+3. Layout spec (Canva px on a 794 × 1123 page, top-left origin; convert
+   with pt = px × 0.75 and flip y):
+   - Margin 80, content width 634. Helvetica / Helvetica-Bold, or the
+     brand's `heading_font` .ttf if one is given.
+   - **Cover:** hero photo full-bleed top 0–670 (grey #D9DDE3 box with
+     "Photo" if none), white panel below with title 56 px bold PRIMARY,
+     eyebrow 13 px bold ACCENT_DARK, address 22 px, specs 14 px MUTED, a
+     PRIMARY rounded stat strip (2 figures), then brand name and date.
+   - **Inner pages:** page title 34 px bold PRIMARY at y=80, eyebrows 13 px
+     bold ACCENT_DARK uppercase, body 15 px TEXT line height 1.5, footer
+     11 px MUTED with disclaimer left and page number right at y=1080.
+   - **Photo cards:** image 300 × 190 with 8 px radius, address 15 px
+     bold, price 15 px ACCENT_DARK, specs 12 px MUTED.
+   - **Tables:** header row PRIMARY with white 12 px bold, rows 13 px,
+     every other row TINT.
+   - Plus the stat tiles, price panel and dark side panel rules below.
+4. Render with `pdftoppm -r 50` and look at every page. Check for
+   overflow, wrapping and empty gaps; shorten wording rather than shrink
+   type below 12 px.
+5. Keep the script in the user's working folder so the next report of
+   the same type reuses it and stays identical.
 
 For any other report (buyer CMA, feaso, case studies, and so on), use
 ReportLab with these rules:
@@ -256,9 +255,8 @@ match page for page. The three designed reports are:
 
 ### PDF build notes
 
-- The scripts draw on the ReportLab canvas in Canva pixel coordinates.
-  `kit.py` converts them (pt = px × 0.75, y flipped). Put any new
-  component in `kit.py` (in `scripts.md`) so all three reports share it.
+- Draw in Canva pixel coordinates and convert once (pt = px × 0.75, y
+  flipped), so the PDF matches the Canva templates.
 - **Fonts:** headings and body use Helvetica. A brand JSON may set
   `heading_font` to a .ttf the user supplies (e.g. their brand font).
 - **Missing images:** a missing image file draws a grey "Photo"

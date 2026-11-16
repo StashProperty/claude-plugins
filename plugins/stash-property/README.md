@@ -8,12 +8,12 @@
 
 Full install notes and the skill list are in the [repo README](../../README.md).
 
-The three designed reports use fixed PDF build scripts in `skills/report-export/scripts/`, so every user gets the same layout:
+The plugin ships no code. Claude builds the three designed reports with ReportLab from the layout spec in `skills/report-export/SKILL.md`:
 
-| Report | Skill | Script | Pages |
-|---|---|---|---|
-| Property Appraisal (for the owner, price on the last page) | cma | build_appraisal.py | 6 |
-| Pre-Appraisal Briefing (for the agent) | pre-appraisal | build_briefing.py | 5 |
-| Campaign Review / Listing Update (for the vendor) | listing-update | build_campaign_review.py | 9 |
+| Report | Skill | Pages |
+|---|---|---|
+| Property Appraisal (for the owner, price on the last page) | cma | 6 |
+| Pre-Appraisal Briefing (for the agent) | pre-appraisal | 5 |
+| Campaign Review / Listing Update (for the vendor) | listing-update | 9 |
 
-`skills/report-export/examples/` holds sample data, a brand file and reference PDFs.
+`skills/report-export/examples/` holds sample data and a brand file.
